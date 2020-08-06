@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:background="#ffffff"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,22 +9,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome User Please Login !"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
     <EditText
         android:inputType="text"
         android:id="@+id/txtuser"
         android:hint="Username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="17"
+        android:drawableLeft="@drawable/ic_action_user"/>
     <EditText
         android:id="@+id/txtpass"
         android:inputType="textPassword"
         android:hint="Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="17"
+        android:drawableLeft="@drawable/ic_action_pass"/>
     <Button
         android:id="@+id/btnlogin"
         android:text="Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF5722"
+        android:ems="15"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
