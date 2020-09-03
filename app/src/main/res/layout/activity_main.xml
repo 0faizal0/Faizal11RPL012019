@@ -45,8 +45,20 @@
         android:ems="17"
         android:drawableLeft="@drawable/ic_action_pass"/>
     <Button
+        android:onClick="login"
         android:id="@+id/btnlogin"
         android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF5722"
+        android:ems="15"
+        android:layout_gravity="center"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btndaftar"
+        android:text="Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

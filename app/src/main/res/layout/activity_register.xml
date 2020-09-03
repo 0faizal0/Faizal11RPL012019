@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome User Please Register !"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/txtuserregis"
+        android:hint="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="17"
+        android:drawableLeft="@drawable/ic_action_user"/>
+    <EditText
+        android:id="@+id/txtpassregis"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="17"
+        android:drawableLeft="@drawable/ic_action_pass"/>
+
+    <EditText
+        android:id="@+id/txtconfirmpass"
+        android:inputType="textPassword"
+        android:hint="Confirm your password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="17"
+        android:drawableLeft="@drawable/ic_action_pass"/>
+
+    <Button
+        android:id="@+id/btnloginregis"
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF5722"
+        android:ems="15"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btndaftarregis"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF5722"
+        android:ems="15"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
